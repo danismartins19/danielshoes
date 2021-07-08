@@ -1,0 +1,252 @@
+/*Variáveis*/
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url(./fontes/Montserrat-Bold.ttf);
+}
+
+@font-face {
+  font-family: Montserrat-Medium;
+  src: url(./fontes/Montserrat-Medium.ttf);
+}
+
+@font-face {
+  font-family: Montserrat-SemiBold;
+  src: url(./fontes/Montserrat-SemiBold.ttf);
+}
+:root {
+    --bgSite: #f6f6f6;
+    --bgCard: #ebe9ea;
+    
+    --white: #fff;
+
+    --black: #181818;
+    --text: #474747;
+
+    --MBold: Montserrat-Bold;
+    --MMedium: Montserrat-Medium;
+    --MSemi: Montserrat-SemiBold;
+  }
+  
+  /*Reset*/
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    font-size: 1.6rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 0;
+  }
+  ul,
+  ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  button,
+  input {
+    border: 0;
+  }
+  button:focus,
+  input:focus {
+    border: 0;
+  }
+
+  header{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .cab1{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    height: 40px;
+    background: var(--black);
+    color: var(--white);
+    font-family: var(--MMedium);
+    font-weight: 400;
+    font-size: 12px;
+  }
+
+  .cab2{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    height: 40px;
+    background: var(--white);
+    color: var(--black);
+    font-family: var(--MBold);
+    font-weight: 400;
+    font-size: 15px;
+  }
+
+  .post{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    
+    padding: 50px;
+    gap: 20px;
+
+    height: 350px;
+    width: 100%;
+
+
+    margin-bottom: 60px;
+  }
+
+  .post::before{
+    content: '';
+
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-image: url(./img/wallpaper.jpeg) ;
+    background-repeat: no-repeat;
+    background-position: 50% 30%;
+    background-size: cover;
+    position: absolute;
+    filter: opacity(0.6);
+    filter: brightness(0.5);
+
+  }
+
+  .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: var(--MMedium);
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--white);
+
+    z-index: 2;
+  }
+
+  .subtitle{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    font-family: var(--MMedium);
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--white);
+    width: 45%;
+    z-index: 2;
+  }
+
+  .bodySite{
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    
+  }
+
+
+  .destaque{
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    gap: 15px;
+    
+    margin-bottom: 80px;
+  }
+
+  .titleDestaque{
+    font-family: var(--MSemi);
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--black);
+  }
+
+  .subtitleDestaque{
+    font-family: var(--MMedium);
+    font-weight: 300;
+    font-size: 13px;
+    color: var(--black);
+  }
+
+
+  .products{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 85%;
+
+  }
+
+  .prod{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 300px;
+    width: 300px;
+
+    margin: 15px 15px; 
+    cursor: crosshair;
+    background-color: var(--bgCard);
+
+    transition: 1s;
+  }
+
+  .prod:hover{
+    background-color: #474747;
+  }
+
+  footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 40px;
+    background-color: var(--black);
+    color: var(--white);
+    font-family: var(--MMedium);
+    font-weight: 400;
+    font-size: 13px;
+
+    
+  }
